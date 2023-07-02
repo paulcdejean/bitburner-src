@@ -6005,7 +6005,7 @@ export interface NS {
    * first element in the specified port without removing that element. If
    * the port is empty, the string “NULL PORT DATA” will be returned.
    *
-   * @param portNumber - Port to peek. Must be an integer between 1 and 20.
+   * @param portNumber - Port to peek. Must be an integer greater than 1.
    * @returns Data in the specified port.
    */
   peek(portNumber: number): PortData;
@@ -6063,7 +6063,7 @@ export interface NS {
    * WARNING: Port Handles only work in NetscriptJS (Netscript 2.0). They will not work in Netscript 1.0.
    *
    * @see https://bitburner-official.readthedocs.io/en/latest/netscript/netscriptmisc.html#netscript-ports
-   * @param portNumber - Port number. Must be an integer between 1 and 20.
+   * @param portNumber - Port number. Must be an integer greater than 1.
    */
   getPortHandle(portNumber: number): NetscriptPort;
 
